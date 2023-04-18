@@ -245,13 +245,13 @@ barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  s
 env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
 #cisfun$ /bin/ls -l
 ./shell: No such file or directory
-#cisfun$ ^[[D^[[D^[[D
+#cisfun$
 ./shell: No such file or directory
-#cisfun$ ^[[C^[[C^[[C^[[C
+#cisfun$
 ./shell: No such file or directory
 #cisfun$ exit
 ./shell: No such file or directory
-#cisfun$ ^C
+#cisfun$
 julien@ubuntu:~/shell$ echo "/bin/ls" | ./shell
 #cisfun$ barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell.c stat.c         wait
 env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
@@ -352,8 +352,8 @@ julien@ubuntu:~/shell$
 
 *Repo:*
 
--   GitHub repository: `holbertonschool-simple_shell
+-   GitHub repository: 'holbertonschool-simple_shell'
 
-## Author
-* **Github** - [JDaniel26-Bory](https://github.com/JDaniel26-Bory)
-* **Github** - [Bluebee45](https://github.com/Bluebee45)
+<h3>Contributors</h3>
+Juan Daniel Restrepo - [@JDaniel26-Bory](https://github.com/JDaniel26-Bory)<br>
+Santiago Espejo Betancur - [Bluebee45](https://github.com/Bluebee45)<br>
