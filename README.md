@@ -350,9 +350,7 @@ julien@ubuntu:~/shell$
 
 ```
 
-*Repo:*
-
--   GitHub repository: 'holbertonschool-simple_shell'
+ GitHub repository: 'holbertonschool-simple_shell'
 
 <h3>Contributors</h3>
 Juan Daniel Restrepo - [@JDaniel26-Bory](https://github.com/JDaniel26-Bory)<br>
