@@ -1,7 +1,7 @@
 #include "shell.h"
 #include <ctype.h>
 
-#define BUFFER_SIZE 1024
+#define BUFFER_SIZE 256
 
 int simple_shell(void)
 {
