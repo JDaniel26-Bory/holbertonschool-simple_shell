@@ -13,5 +13,6 @@
 #include <sys/wait.h>
 
 int simple_shell(void);
+char **tokenizer(char *buffer, const char *delimiter);
 
 #endif
