@@ -1,21 +1,22 @@
 #include "shell.h"
 #include <ctype.h>
 
-#define BUFFER_SIZE 256
+#define BUFFER_SIZE 1024
 
 int simple_shell(void)
 {
     char *buffer = NULL;
     size_t buffer_size = 0;
-    ssize_t chars_read;
+    ssize_t c;
     pid_t pid;
+    int status;
 
     while (1) {
-        printf("$ ");
-        chars_read = getline(&buffer, &buffer_size, stdin);
-        if (chars_read == -1) {
+        putchar('$');
+        c = getline(&buffer, &buffer_size, stdin);
+        if (c == -1) {
             if (feof(stdin)) {
-                printf("\n");
+                putchar('\n');
             }
             break;
         }
@@ -30,7 +31,7 @@ int simple_shell(void)
             perror(buffer);
             exit(EXIT_FAILURE);
         } else {
-            waitpid(pid, NULL, 0);
+            waitpid(pid, &status, 0);
         }
     }
 
