@@ -1,33 +1,52 @@
 #include "main.h"
-
-int main()
+/**
+ * main - is the function principal
+ * @void: is a variable
+ *
+ * Return: 0
+ */
+int main(void)
 {
-	while (1)
-	{
-		char *string = NULL;
-		size_t line_len = 0;
-		size_t chars_read;
-		pid_t pid;
-		int status;
-
-		string = malloc(120);
-		printf("Simple_shell~$");
-		line_len = getline(&string, &line_len, stdin);
-		if (*string == -1)
-			break;
-		pid = fork();
-        if (pid == -1) {
-            perror("fork");
-            exit(EXIT_FAILURE);
-        } else if (pid == 0) {
-            char *args[] = { string, NULL };
-            execve(string, args, NULL);
-            perror(string);
-            exit(EXIT_FAILURE);
-        } else {
-            waitpid(pid, &status, 0);
-        }
-    }
-    free(stdin);
-    exit(EXIT_SUCCESS);
+char *buffer = NULL;
+size_t buffer_size = 0;
+ssize_t chars_read;
+pid_t pid;
+int status;
+while (1)
+{
+printf("$ ");
+chars_read = getline(&buffer, &buffer_size, stdin);
+if (chars_read == -1)
+{
+if (errno == EINVAL)
+{
+perror("getline");
+}
+if (errno == ENOMEM)
+{
+perror("getline");
+}
+break;
+}
+buffer[strcspn(buffer, "\n")] = '\0';
+pid = fork();
+if (pid == -1)
+{
+perror("fork");
+exit(EXIT_FAILURE);
+}
+else if (pid == 0)
+{
+char *args[] = { buffer, NULL };
+execve(buffer, args, NULL);
+perror(buffer);
+exit(EXIT_FAILURE);
+}
+else
+{
+waitpid(pid, &status, 0);
+}
+}
+free(buffer);
+exit(EXIT_SUCCESS);
 }
