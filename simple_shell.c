@@ -9,7 +9,6 @@ int simple_shell(void)
     size_t buffer_size = 0;
     ssize_t chars_read;
     pid_t pid;
-    int status;
 
     while (1) {
         printf("$ ");
@@ -31,7 +30,7 @@ int simple_shell(void)
             perror(buffer);
             exit(EXIT_FAILURE);
         } else {
-            waitpid(pid, &status, 0);
+            waitpid(pid, NULL, 0);
         }
     }
 
