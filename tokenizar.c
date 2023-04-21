@@ -1,29 +1,56 @@
 #include "shell.h"
 
 /**
- * tokenizer - tokenizes a string according to a delimiter
- * @buffer: string to tokenize
- * @delimiter: delimiter to use for tokenization
+ * tokenizer - Takes a string to tokenize accordign to a delimiter.
  *
- * Return: array of tokens
+ * @buffer: String to tokenize.
+ * @delimiter: Delimiter to make the tokens.
+ *
+ * Description: Takes a string and count the amount of tokens to make
+ * according to delimiter, then save each token as element of an array.
+ *
+ * Return: Pointer to array of tokens
  */
+
 char **tokenizer(char *buffer, const char *delimiter)
 {
-char **tokens = malloc(sizeof(char *));
-char *token = strtok(buffer, delimiter);
-int i = 0;
-    if (!buffer || !delimiter)
-        return NULL;
-    if (!tokens)
-        return NULL;
-    while (token != NULL)
-    {
-        tokens[i++] = strdup(token);
-        tokens = realloc(tokens, sizeof(char *) * (i + 1));
-        if (!tokens)
-            return NULL;
-        token = strtok(NULL, delimiter);
-    }
-    tokens[i] = NULL;
-    return tokens;
+	int i = 0;
+	char *tokens_count = NULL, *tokens = NULL, *ptr = NULL, **ar = NULL;
+
+	if (!(buffer) || !(delimiter))
+		return (NULL);
+
+	tokens_count = strdup(buffer);
+	tokens = strdup(buffer);
+
+	if (!(tokens_count) || !(tokens))
+		return (NULL);
+
+	ptr = strtok(tokens_count, delimiter);
+	if (ptr == NULL)
+		return (NULL);
+
+	for (i = 0; ptr != NULL; i++)
+	{
+		ptr = strtok(NULL, delimiter);
+	}
+
+	ar = malloc(sizeof(char *) * (i + 1));
+	if (ar == NULL)
+		return (NULL);
+
+	ptr = strtok(tokens, delimiter);
+	if (ptr == NULL)
+		return (NULL);
+
+	for (i = 0; ptr != NULL; i++)
+	{
+		ar[i] = strdup(ptr);
+		ptr = strtok(NULL, delimiter);
+	}
+
+	ar[i] = NULL;
+	free(tokens_count);
+	free(tokens);
+	return (ar);
 }
