@@ -11,12 +11,11 @@ int main(void)
 
     while (1)
     {
-        printf("$ ");
+        printf("shell~$");
         c = getline(&buffer, &buffer_size, stdin);
         if (c == -1)
         {
             if (feof(stdin))
-                putchar('\n');
             break;
         }
         buffer[strcspn(buffer, "\n")] = '\0';
