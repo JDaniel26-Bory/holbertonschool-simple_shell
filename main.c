@@ -8,11 +8,10 @@ int main(void)
     ssize_t c;
     pid_t pid;
     int status;
-    int MAX_LINE = 0;	
-    while (1)
+ 
+    while (buffer_size != (size_t)EOF) 
     {
         printf("shell~$");
-memset(buffer, 0, MAX_LINE);
         c = getline(&buffer, &buffer_size, stdin);
         if (c == -1)
         {
