@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef SHELL_H
+#define SHELL_H
 
 
 #include <ctype.h>
@@ -14,5 +14,7 @@
 
 int simple_shell(void);
 char **tokenizer(char *buffer, const char *delimiter);
+int main(void);
+char **split_line(char *line);
 
 #endif
