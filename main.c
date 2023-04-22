@@ -1,50 +1,61 @@
 #include "shell.h"
 
+/**
+ * _isatty - Function to check fir interactive mode and print prompt.
+ *
+ * Description: Determines if initiation of the shell is in interactive mode
+ * and displays a prompt.
+ *
+ */
+
+void _isatty(void)
+{
+	if (isatty(STDIN_FILENO) == 1)
+		write(1, "$ ", 2);
+}
+
+/**
+ * main - SHELL call
+ *
+ * Return: Call to recursive SHELL.
+ *
+ */
 
 int main(void)
 {
-    char *buffer = NULL;
-    size_t buffer_size = 0;
-    ssize_t c;
-    pid_t pid;
-    int status;
- 
-    while (buffer_size != (size_t)EOF) 
-    {
-        printf("shell~$");
-        c = getline(&buffer, &buffer_size, stdin);
-        if (c == -1)
-        {
-            if (feof(stdin))
-            break;
-        }
-        buffer[strcspn(buffer, "\n")] = '\0';
+	size_t init = 0;
+	size_t char_count = 0;
+	char *buffer = NULL;
+	char **tokens = NULL;
+	char *path = NULL;
 
-        pid = fork();
-        if (pid == -1)
-        {
-            perror("fork");
-            exit(EXIT_FAILURE);
-        }
-        else if (pid == 0)
-        {
-            char **args = split_line(buffer);
-            if (args == NULL)
-            {
-                fprintf(stderr, "Failed to tokenize command\n");
-                exit(EXIT_FAILURE);
-            }
+	while (init != (size_t)EOF)
+	{
+		_isatty();
+		init = getline(&buffer, &char_count, stdin);
+		tokens = tokenizer(buffer, " \n");
 
-            execvp(args[0], args);
-            perror(args[0]);
-            exit(EXIT_FAILURE);
-        }
-        else
-        {
-            waitpid(pid, &status, 0);
-        }
-    }
+		if (!buffer)
+			return (0);
+		if (_strcmp(tokens[0], "exit") == 0)
+		{
+			free_dp(tokens);
+			shell_exit();
+		}
+		if (_strcmp(tokens[0], "env") == 0)
+		{
+			shell_env();
+		}
+		path = mini_paths(tokens[0]);
+		new_process(path, tokens);
 
-    free(buffer);
-    exit(EXIT_SUCCESS);
+		free(path);
+		free_dp(tokens);
+		free(buffer);
+		buffer = NULL;
+		char_count = 0;
+	}
+	write(1, "\n", 1);
+
+	return (0);
 }

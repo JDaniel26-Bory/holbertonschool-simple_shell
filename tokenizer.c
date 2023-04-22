@@ -1,65 +1,56 @@
 #include "shell.h"
 
-
 /**
- * tokenizer - Toma una cadena para tokenizarla según un delimitador.
+ * tokenizer - Takes a string to tokenize accordign to a delimiter.
  *
- * @buffer: La cadena a tokenizar.
- * @delimiter: El delimitador para crear los tokens.
+ * @buffer: String to tokenize.
+ * @delimiter: Delimiter to make the tokens.
  *
- * Return: Un puntero a un arreglo de tokens.
+ * Description: Takes a string and count the amount of tokens to make
+ * according to delimiter, then save each token as element of an array.
+ *
+ * Return: Pointer to array of tokens
  */
+
 char **tokenizer(char *buffer, const char *delimiter)
 {
-    int i = 0;
-    char *tokens_count = NULL, *tokens = NULL, *ptr = NULL, **ar = NULL;
+	int i = 0;
+	char *tokens_count = NULL, *tokens = NULL, *ptr = NULL, **ar = NULL;
 
-    if (!(buffer) || !(delimiter))
-        return (NULL);
+	if (!(buffer) || !(delimiter))
+		return (NULL);
 
-    tokens_count = strdup(buffer);
-    tokens = strdup(buffer);
+	tokens_count = _strdup(buffer);
+	tokens = _strdup(buffer);
 
-    if (!(tokens_count) || !(tokens))
-        return (NULL);
+	if (!(tokens_count) || !(tokens))
+		return (NULL);
 
-    ptr = strtok(tokens_count, delimiter);
-    if (ptr == NULL)
-        return (NULL);
+	ptr = strtok(tokens_count, delimiter);
+	if (ptr == NULL)
+		return (NULL);
 
-    for (i = 0; ptr != NULL; i++)
-    {
-        ptr = strtok(NULL, delimiter);
-    }
+	for (i = 0; ptr != NULL; i++)
+	{
+		ptr = strtok(NULL, delimiter);
+	}
 
-    ar = malloc(sizeof(char *) * (i + 1));
-    if (ar == NULL)
-        return (NULL);
+	ar = malloc(sizeof(char *) * (i + 1));
+	if (ar == NULL)
+		return (NULL);
 
-    ptr = strtok(tokens, delimiter);
-    if (ptr == NULL)
-        return (NULL);
+	ptr = strtok(tokens, delimiter);
+	if (ptr == NULL)
+		return (NULL);
 
-    for (i = 0; ptr != NULL; i++)
-    {
-        ar[i] = strdup(ptr);
-        ptr = strtok(NULL, delimiter);
-    }
+	for (i = 0; ptr != NULL; i++)
+	{
+		ar[i] = _strdup(ptr);
+		ptr = strtok(NULL, delimiter);
+	}
 
-    ar[i] = NULL;
-    free(tokens_count);
-    free(tokens);
-    return (ar);
-}
-
-/**
- * split_line - Divide una línea de comando en argumentos.
- *
- * @line: La línea de comando a dividir.
- *
- * Return: Un arreglo de punteros a cadenas que representan los argumentos.
- */
-char **split_line(char *line)
-{
-    return tokenizer(line, " \t\r\n\a");
+	ar[i] = NULL;
+	free(tokens_count);
+	free(tokens);
+	return (ar);
 }
