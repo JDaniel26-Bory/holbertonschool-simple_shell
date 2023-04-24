@@ -21,7 +21,7 @@ void _isatty(void)
  *
  */
 
-int main(void)
+int simple_shell(void)
 {
 	size_t init = 0;
 	size_t char_count = 0;
