@@ -11,7 +11,7 @@
 void _isatty(void)
 {
 	if (isatty(STDIN_FILENO) == 1)
-		write(1, "$ ", 2);
+		write(1, "$", 2);
 }
 
 /**
