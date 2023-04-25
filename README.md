@@ -1,357 +1,159 @@
-C - Simple Shell
-======================
+![image](img/simple_shell_header.png)
+<h1>Simple Shell</h1>
+Release date April 25, 2023
 
--   By Julien Barbier
--   Project to be done in teams of 2 people (your team: Santiago Espejo Betancur, Juan Daniel Restrepo Montes)
+</p>
+          </a>
+          <a href="https://github.com/Ouyei/simple_shell/commits/master" target="_blank">
+               <img alt="commit_activity" src="https://img.shields.io/github/commit-activity/y/Ouyei/simple_shell" />
+          </a>
+          <a href="https://github.com/Ouyei/simple_shell/graphs/contributors" target="_blank">
+               <img alt="contributors" src="https://img.shields.io/github/contributors/Ouyei/simple_shell" />
+          </a>
+          <a href="https://github.com/Ouyei/simple_shell/blob/master/hsh_shell.c"target="_blank">
+               <img alt="code-size" src="https://img.shields.io/tokei/lines/github/Ouyei/simple_shell" />
+          </a>
+          <a href="https://github.com/Ouyei/simple_shell/blob/master/README.md" target="_blank">
+               <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen" />
+          </a>
+     </p>
 
-Concepts
---------
+## Table of Contents
+* [Introduction](#Introduction)
+  * What is Shell
+  * What is it for
+* [Project Information](#Project-Information)
+    * Tasks
+    * Enviroment
+    * General requirements
+    * Allowed functions
+* [Documentation](#Documentation)
+    * Instalation
+    * Testing
+    * Files
+    * Flowchart
+* [Authors](#Authors)
 
-For this project, students are expected to look at these concepts:
+## Introduction
 
--   [Everything you need to know to start coding your own shell](https://alx-intranet.hbtn.io/concepts/64)
--   [Approaching a Project](https://alx-intranet.hbtn.io/concepts/350)
+### What is Shell
+A **shell** is a command-line interpreter, it is the computer program that provides a user interface to access the services of the operating system. Depending on the type of interface they use, shells can be of various types, in this case, a shell program of the type **`sh`** ([Bourne Shell](https://en.wikipedia.org/wiki/Bourne_shell)) will be developed. Users typically interact with a shell using a [terminal emulator](https://en.wikipedia.org/wiki/Terminal_emulator) that is used for entering data into and displaying or printing data from, a computer or a computing system.
 
-Background Context
-------------------
+### What is it for
+This consists of interpreting orders. It incorporates features such as process control, input/output redirection, law listing and reading, protection, communications, and a command language for writing batch programs or scripts. All Unix-type systems have at least one interpreter compatible with the Bourne shell. The Bourne shell program is found within the Unix file hierarchy at **`/bin/sh`**.
 
-Write a simple UNIX command interpreter.
+## Project Information
 
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/235/shell.jpeg)
+### Tasks
 
-^ "The Gates of Shell", by [Spencer Cheng](https://alx-intranet.hbtn.io/rltoken/AtYRSM03vJDrko9xHodxFQ "Spencer Cheng"), featuring [Julien Barbier](https://alx-intranet.hbtn.io/rltoken/-ezXgcyfhc8qU1DeUInLUA "Julien Barbier")
+* Task 0. README, man_1_simple_shell, AUTHORS
+* Task 1. Betty would be proud
+* Task 2. Simple shell 0.1
+* Task 3. Simple shell 0.2
+* Task 4. Simple shell 0.3
+* Task 5. Simple shell 0.4
+* Task 6. Simple shell 1.0
 
-Resources
----------
+### Enviroment
 
-*Read or watch*:
+<!-- ubuntu -->
+<a href="https://ubuntu.com/" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=Ubuntu&color=E95420&logo=Ubuntu&logoColor=E95420&labelColor=2F333A" alt="Suite CRM"></a> OS: Ubuntu 20.04 LTS
+<!-- bash -->
+<a href="https://www.gnu.org/software/bash/" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=GNU%20Bash&color=4EAA25&logo=GNU%20Bash&logoColor=4EAA25&labelColor=2F333A" alt="terminal"></a>
+<!-- c -->	
+<a href="https://www.cprogramming.com/" target="_blank"><img src="https://img.shields.io/static/v1?label=&message=C%20Language&color=5C6BC0&logo=c&logoColor=A8B9CC&labelColor=2F333A" alt="C Low level programming language"></a> Language: C
+Compiler: gcc 9.3.0
+<!-- vim -->
+<a href="https://www.vim.org/" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=Vim&color=019733&logo=Vim&logoColor=019733&labelColor=2F333A" alt="Suite CRM"></a> Editor: VIM 8.1.2269
+<!-- git -->
+<a href="https://git-scm.com/" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=Git&color=F05032&logo=Git&logoColor=F05032&labelColor=2F333A" alt="git distributed version control system"></a> Control version: Git
+<!-- github -->
+<a href="https://github.com" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=GitHub&color=181717&logo=GitHub&logoColor=f2f2f2&labelColor=2F333A" alt="Github"></a>
 
--   [Unix shell](https://alx-intranet.hbtn.io/rltoken/f0YU9TAhniMXWlSXtb64Yw "Unix shell")
--   [Thompson shell](https://alx-intranet.hbtn.io/rltoken/7LJOp2qP7qHUcsOK2-F3qA "Thompson shell")
--   [Ken Thompson](https://alx-intranet.hbtn.io/rltoken/wTSu31ZP1f7fFTJFgRQC7w "Ken Thompson")
--   *Everything you need to know to start coding your own shell* concept page
+Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
-*man or help*:
+### General requirements
+ * Allowed editors: vi, vim, emacs
+ * All your files will be compiled on `Ubuntu 14.04 LTS`
+ * Your C programs and functions will be compiled with `gcc 4.8.4` using the flags `-Wall` `-Werror` `-Wextra` and `-pedantic`
+ * Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+ * No more than 5 functions per file
+ * All your header files should be include guarded
+ * This shell should not have any memory leaks
+ * Unless specified otherwise, your program must have the exact same output as `sh` (`/bin/sh`) as well as the exact same error output.
 
--   `sh` (Run `sh` as well)
+### Allowed functions used 
 
-Learning Objectives
--------------------
+* `execve` (man 2 execve)
+* `exit` (man 3 exit)
+* `_exit` (man 2 _exit)
+* `fork` (man 2 fork)
+* `free` (man 3 free)
+* `getline` (man 3 getline)
+* `isatty` (man 3 isatty)
+* `malloc` (man 3 malloc)
+* `perror`(man 3 perror)
+* `signal` (man 2 signal)
+* `stat` (__ xstat) (man 2 stat)
+* `strtok` (man 3 strtok)
+* `wait` (man 2 wait)
+* `write` (man 2 write)
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/4mHp8pZKm5sjL4-TEJEKeg "explain to anyone"), *without the help of Google*:
+## Documentation
 
-### General
+### Installation
 
--   Who designed and implemented the original Unix operating system
--   Who wrote the first version of the UNIX shell
--   Who invented the B programming language (the direct predecessor to the C programming language)
--   Who is Ken Thompson
--   How does a shell work
--   What is a pid and a ppid
--   How to manipulate the environment of the current process
--   What is the difference between a function and a system call
--   How to create processes
--   What are the three prototypes of `main`
--   How does the shell use the `PATH` to find the programs
--   How to execute another program with the `execve` system call
--   How to suspend the execution of a process until one of its children terminates
--   What is `EOF` / "end-of-file"?
-
-Requirements
-------------
-
-### General
-
--   Allowed editors: `vi`, `vim`, `emacs`
--   All your files will be compiled on Ubuntu 20.04 LTS using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
--   All your files should end with a new line
--   A `README.md` file, at the root of the folder of the project is mandatory
--   Your code should use the `Betty` style. It will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl "betty-style.pl") and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl "betty-doc.pl")
--   Your shell should not have any memory leaks
--   No more than 5 functions per file
--   All your header files should be include guarded
--   Use system calls only when you need to ([why?](https://alx-intranet.hbtn.io/rltoken/EU7B1PTSy14INnZEShpobQ "why?"))
-
-### GitHub
-
-*There should be one project repository per group. If you clone/fork/whatever a project repository with the same name before the second deadline, you risk a 0% score.*
-
-More Info
----------
-
-### Output
-
--   Unless specified otherwise, your program *must have the exact same output* as `sh` (`/bin/sh`) as well as the exact same error output.
--   The only difference is when you print an error, the name of the program must be equivalent to your `argv[0]` (See below)
-
-Example of error with `sh`:
-
-
-$ echo "qwerty" | /bin/sh
-/bin/sh: 1: qwerty: not found
-$ echo "qwerty" | /bin/../bin/sh
-/bin/../bin/sh: 1: qwerty: not found
-$
-
-
-
-Same error with your program `hsh`:
-
-
-$ echo "qwerty" | ./hsh
-./hsh: 1: qwerty: not found
-$ echo "qwerty" | ./././hsh
-./././hsh: 1: qwerty: not found
-$
-
-
-
-### List of allowed functions and system calls
-
--   `access` (man 2 access)
--   `chdir` (man 2 chdir)
--   `close` (man 2 close)
--   `closedir` (man 3 closedir)
--   `execve` (man 2 execve)
--   `exit` (man 3 exit)
--   `_exit` (man 2 _exit)
--   `fflush` (man 3 fflush)
--   `fork` (man 2 fork)
--   `free` (man 3 free)
--   `getcwd` (man 3 getcwd)
--   `getline` (man 3 getline)
--   `getpid` (man 2 getpid)
--   `isatty` (man 3 isatty)
--   `kill` (man 2 kill)
--   `malloc` (man 3 malloc)
--   `open` (man 2 open)
--   `opendir` (man 3 opendir)
--   `perror` (man 3 perror)
--   `read` (man 2 read)
--   `readdir` (man 3 readdir)
--   `signal` (man 2 signal)
--   `stat` (__xstat) (man 2 stat)
--   `lstat` (__lxstat) (man 2 lstat)
--   `fstat` (__fxstat) (man 2 fstat)
--   `strtok` (man 3 strtok)
--   `wait` (man 2 wait)
--   `waitpid` (man 2 waitpid)
--   `wait3` (man 2 wait3)
--   `wait4` (man 2 wait4)
--   `write` (man 2 write)
-
-### Compilation
-
-Your shell will be compiled this way:
-
-
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
-
-
+- Clone this repository: `git clone "https://github.com/Ouyei/simple_shell"`
+- Change directories into the repository: `cd simple_shell`
+- Compile: `gcc -Wall -Werror -Wextra -pedantic *.c -o hsh`
+- Run the shell in interactive mode: `./hsh`
+- Or run the shell in non-interactive mode: example `echo "Hello world!" | ./hsh`
 
 ### Testing
 
-Your shell should work like this in interactive mode:
-
-
-$ ./hsh
-($) /bin/ls
-hsh main.c shell.c
-($)
-($) exit
-$
-
-
-
-But also in non-interactive mode:
-
-
-$ echo "/bin/ls" | ./hsh
-hsh main.c shell.c test_ls_2
-$
-$ cat test_ls_2
-/bin/ls
-/bin/ls
-$
-$ cat test_ls_2 | ./hsh
-hsh main.c shell.c test_ls_2
-hsh main.c shell.c test_ls_2
-$
-
-
-
-### Checks
-
-The Checker will be released at the end of the project (1-2 days before the deadline). We *strongly* encourage the entire class to work together to create a suite of checks covering both regular tests and edge cases for each task. See task `8\. Test suite`.
-
-Tasks
------
-
-### 0\. README, man, AUTHORS
-
-mandatory
-
--   Write a `README`
--   Write a `man` for your shell.
--   You should have an `AUTHORS` file at the root of your repository, listing all individuals having contributed content to the repository. Format, see [Docker](https://alx-intranet.hbtn.io/rltoken/UL8J3kgl7HBK_Z9iBL3JFg "Docker")
-
-*Repo:*
-
--   GitHub repository: 'holbertonschool-simple_shell`
--   File: `README.md, man_1_simple_shell, AUTHORS`
-
-### 1\. Betty would be proud
-
-mandatory
-
-Write a beautiful code that passes the Betty checks
-
-*Repo:*
-
--   GitHub repository: `holbertonschool-simple_shell`
-
-### 2\. Simple shell 0.1
-
-mandatory
-
-Write a UNIX command line interpreter.
-
--   Usage: `simple_shell`
-
-Your Shell should:
-
--   Display a prompt and wait for the user to type a command. A command line always ends with a new line.
--   The prompt is displayed again each time a command has been executed.
--   The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
--   The command lines are made only of one word. No arguments will be passed to programs.
--   If an executable cannot be found, print an error message and display the prompt again.
--   Handle errors.
--   You have to handle the "end of file" condition (`Ctrl+D`)
-
-You don't have to:
-
--   use the `PATH`
--   implement built-ins
--   handle special characters : `"`, `'`, , `\`, `*`, `&`, `#`
--   be able to move the cursor
--   handle commands with arguments
-
-
-julien@ubuntu:~/shell$ ./shell
-#cisfun$ ls
-./shell: No such file or directory
-#cisfun$ /bin/ls
-barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell.c  stat.c         wait
-env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
-#cisfun$ /bin/ls -l
-./shell: No such file or directory
-#cisfun$
-./shell: No such file or directory
-#cisfun$
-./shell: No such file or directory
-#cisfun$ exit
-./shell: No such file or directory
-#cisfun$
-julien@ubuntu:~/shell$ echo "/bin/ls" | ./shell
-#cisfun$ barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell.c stat.c         wait
-env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
-#cisfun$ julien@ubuntu:~/shell$
-
-
-
-**Repo:**
-
--   GitHub repository: `holbertonschool-simple_shell`
-
-### 3\. Simple shell 0.2
-
-mandatory
-
-Simple shell 0.1 +
-
--   Handle command lines with arguments
-
-**Repo:**
-
--   GitHub repository: `holbertonschool-simple_shell`
-
-### 4\. Simple shell 0.3
-
-mandatory
-
-Simple shell 0.2 +
-
--   Handle the `PATH`
--   `fork` must not be called if the command doesn't exist
-
-
-julien@ubuntu:~/shell$ ./shell_0.3
-:) /bin/ls
-barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3  stat    test_scripting.sh  wait.c
-env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     shell.c    stat.c  wait
-:) ls
-barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3  stat    test_scripting.sh  wait.c
-env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     shell.c    stat.c  wait
-:) ls -l /tmp
-total 20
--rw------- 1 julien julien    0 Dec  5 12:09 config-err-aAMZrR
-drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-colord.service-V7DUzr
-drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-rtkit-daemon.service-ANGvoV
-drwx------ 3 root   root   4096 Dec  5 12:07 systemd-private-062a0eca7f2a44349733e78cb4abdff4-systemd-timesyncd.service-CdXUtH
--rw-rw-r-- 1 julien julien    0 Dec  5 12:09 unity_support_test.0
-:) ^C
-julien@ubuntu:~/shell$
-
-
-
-**Repo:**
-
--   GitHub repository: `holbertonschool-simple_shell`
-
-### 5\. Simple shell 0.4
-
-mandatory
-
-Simple shell 0.3 +
-
--   Implement the `exit` built-in, that exits the shell
--   Usage: `exit`
--   You don't have to handle any argument to the built-in `exit`
-
-**Repo:**
-
--   GitHub repository: `holbertonschool-simple_shell`
-
-### 6\. Simple shell 1.0
-
-mandatory
-
-Simple shell 0.4 +
-
--   Implement the `env` **built-in**, that prints the current environment
-
-
-julien@ubuntu:~/shell$ ./simple_shell
-$ env
-USER=julien
-LANGUAGE=en_US
-SESSION=ubuntu
-COMPIZ_CONFIG_PROFILE=ubuntu
-SHLVL=1
-HOME=/home/julien
-C_IS=Fun_:)
-DESKTOP_SESSION=ubuntu
-LOGNAME=julien
-TERM=xterm-256color
-PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-DISPLAY=:0
-$ exit
-julien@ubuntu:~/shell$
+First compile and then run the executable file on your terminal
+For compile see [Installation](#installation) section
 
 ```
+$ ./hsh
+$
+$ ls -l
+total 56
+-rw-r--r-- 1 root root  238 Dec  6 08:34 AUTHORS
+-rwxr-xr-x 1 root root  393 Dec  6 08:39 generate-authors.sh
+-rw-r--r-- 1 root root 2263 Dec  6 08:39 hsh_execute.c
+-rw-r--r-- 1 root root  263 Dec  6 08:39 hsh_getenv.c
+-rw-r--r-- 1 root root  341 Dec  6 08:39 hsh_getline_command.c
+-rw-r--r-- 1 root root  580 Dec  6 08:39 hsh_get_path.c
+-rw-r--r-- 1 root root 1160 Dec  6 08:39 hsh_shell.c
+-rw-r--r-- 1 root root 1475 Dec  6 08:39 hsh_string_foos.c
+-rw-r--r-- 1 root root  695 Dec  6 08:39 hsh_tokenizer.c
+-rw-r--r-- 1 root root 1066 Dec  6 08:39 hsh_values_path.c
+drwxr-xr-x 2 root root   37 Dec  6 08:34 img
+-rw-r--r-- 1 root root 1461 Dec  6 08:34 man_1_simple_shell
+-rw-r--r-- 1 root root 7134 Dec  6 08:34 README.md
+-rw-r--r-- 1 root root  824 Dec  6 08:39 shell.h
+```
+### Files
 
- GitHub repository: 'holbertonschool-simple_shell'
+|File|Description|
+|---|---|
+|[AUTHORS](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/AUTHORS)|Contributors in this repository|
+|[README.md](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/README.md)|Information about our repository|
+|[hsh_execute](https://github.com/Ouyei/simple_shell/blob/master/hsh_execute.c )|Execute builtins and commands|
+|[hsh_get_path.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_get_path.c)|Get variable PATH|
+|[hsh_getenv.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_getenv.c)|Prints enviroment to stndard output|
+|[hsh_getline_command.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_getline_command.c)|Gets input|
+|[hsh_shell.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_shell.c)|Main arguments functions||[hsh_string_foos.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_string_foos.c)|Function to work and modifie string|
+|[hsh_tokenizer.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_tokenizer.c)|Tokenizes a stirng|
+|[man_1_simple_shell](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/man_1_simple_shell)|Manual page our of Simple Shell|
+|[shell.h](https://github.com/Ouyei/simple_shell/blob/master/shell.h)|Prototypes functions and headers|
 
-<h3>Contributors</h3>
-Juan Daniel Restrepo - [@JDaniel26-Bory](https://github.com/JDaniel26-Bory)<br>
-Santiago Espejo Betancur - [Bluebee45](https://github.com/Bluebee45)<br>
+## Flowchart
+
+![image]()
+
+## Authors
+
+<li> Santiago Espejo - <a href="https://github.com/Bluebee45">Bluebee45</a></li>
+<li> Juan Daniel Restrepo - <a href="https://github.com/JDaniel26-Bory">JDaniel26-Bory</a></li>
