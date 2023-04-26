@@ -114,25 +114,6 @@ Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 First compile and then run the executable file on your terminal
 For compile see [Installation](#installation) section
 
-```
-$ ./hsh
-$
-$ ls -l
-total 56
--rw-r--r-- 1 root root  238 Dec  6 08:34 AUTHORS
--rwxr-xr-x 1 root root  393 Dec  6 08:39 generate-authors.sh
--rw-r--r-- 1 root root 2263 Dec  6 08:39 hsh_execute.c
--rw-r--r-- 1 root root  263 Dec  6 08:39 hsh_getenv.c
--rw-r--r-- 1 root root  341 Dec  6 08:39 hsh_getline_command.c
--rw-r--r-- 1 root root  580 Dec  6 08:39 hsh_get_path.c
--rw-r--r-- 1 root root 1160 Dec  6 08:39 hsh_shell.c
--rw-r--r-- 1 root root 1475 Dec  6 08:39 hsh_string_foos.c
--rw-r--r-- 1 root root  695 Dec  6 08:39 hsh_tokenizer.c
--rw-r--r-- 1 root root 1066 Dec  6 08:39 hsh_values_path.c
-drwxr-xr-x 2 root root   37 Dec  6 08:34 img
--rw-r--r-- 1 root root 1461 Dec  6 08:34 man_1_simple_shell
--rw-r--r-- 1 root root 7134 Dec  6 08:34 README.md
-
 ### Files
 
 |File|Description|
