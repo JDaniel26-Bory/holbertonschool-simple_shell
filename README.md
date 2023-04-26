@@ -1,4 +1,4 @@
-![image](img/simple_shell_header.png)
+![image](img/https://1000logos.net/shell-logo/)
 <h1>Simple Shell</h1>
 Release date April 25, 2023
 
