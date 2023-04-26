@@ -4,16 +4,11 @@ Release date April 25, 2023
 
 </p>
           </a>
-          <a href="https://github.com/Ouyei/simple_shell/commits/master" target="_blank">
-               <img alt="commit_activity" src="https://img.shields.io/github/commit-activity/y/Ouyei/simple_shell" />
-          </a>
-          <a href="https://github.com/Ouyei/simple_shell/graphs/contributors" target="_blank">
+          <a href="https://github.com/Bluebee45/holbertonschool-simple_shell/graphs/contributors" target="_blank">
                <img alt="contributors" src="https://img.shields.io/github/contributors/Ouyei/simple_shell" />
+		   </a>
           </a>
-          <a href="https://github.com/Ouyei/simple_shell/blob/master/hsh_shell.c"target="_blank">
-               <img alt="code-size" src="https://img.shields.io/tokei/lines/github/Ouyei/simple_shell" />
-          </a>
-          <a href="https://github.com/Ouyei/simple_shell/blob/master/README.md" target="_blank">
+          <a href="https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/README.md" target="_blank">
                <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen" />
           </a>
      </p>
@@ -120,12 +115,12 @@ For compile see [Installation](#installation) section
 |---|---|
 |[AUTHORS](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/AUTHORS)|Contributors in this repository|
 |[README.md](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/README.md)|Information about our repository|
-|[hsh_execute](https://github.com/Ouyei/simple_shell/blob/master/hsh_execute.c )|Execute builtins and commands|
-|[hsh_get_path.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_get_path.c)|Get variable PATH|
-|[hsh_getenv.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_getenv.c)|Prints enviroment to stndard output|
-|[hsh_getline_command.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_getline_command.c)|Gets input|
-|[hsh_shell.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_shell.c)|Main arguments functions||[hsh_string_foos.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_string_foos.c)|Function to work and modifie string|
-|[hsh_tokenizer.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_tokenizer.c)|Tokenizes a stirng|
+|[string.c](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/string.c )|compares strings to find dir.|
+|[shell.c](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/shell.c)|func with infinite loop|
+|[prompt.c](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/prompt.c)|call prompt from another function (prompt)|
+|[gas.c](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/gas.c)|finds command to execute in path routes.|
+|[execute.c](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/execute.c)|similar to puts in C| functions||[hsh_string_foos.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_string_foos.c)|Function to work and modifie string|
+|[engine.c](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/engine.c)|identifies if first char is a slash.|
 |[man_1_simple_shell](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/man_1_simple_shell)|Manual page our of Simple Shell|
 |[shell.h](https://github.com/Ouyei/simple_shell/blob/master/shell.h)|Prototypes functions and headers|
 
