@@ -150,7 +150,7 @@ drwxr-xr-x 2 root root   37 Dec  6 08:34 img
 
 ## Flowchart
 
-![image](Untitled-Diagram.jpg)|Images
+![image](Untitled-Diagram.jpg)
 
 ## Authors
 
