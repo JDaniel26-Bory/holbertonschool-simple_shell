@@ -122,7 +122,7 @@ For compile see [Installation](#installation) section
 |[execute.c](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/execute.c)|similar to puts in C| functions||[hsh_string_foos.c](https://github.com/Ouyei/simple_shell/blob/master/hsh_string_foos.c)|Function to work and modifie string|
 |[engine.c](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/engine.c)|identifies if first char is a slash.|
 |[man_1_simple_shell](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/man_1_simple_shell)|Manual page our of Simple Shell|
-|[shell.h](https://github.com/Ouyei/simple_shell/blob/master/shell.h)|Prototypes functions and headers|
+|[shell.h](https://github.com/Bluebee45/holbertonschool-simple_shell/blob/master/shell.h)|Prototypes functions and headers|
 
 ## Flowchart
 
