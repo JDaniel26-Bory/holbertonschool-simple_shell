@@ -60,7 +60,7 @@ This consists of interpreting orders. It incorporates features such as process c
 <a href="https://ubuntu.com/" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=Ubuntu&color=E95420&logo=Ubuntu&logoColor=E95420&labelColor=2F333A" alt="Suite CRM"></a> OS: Ubuntu 20.04 LTS
 <!-- bash -->
 <a href="https://www.gnu.org/software/bash/" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=GNU%20Bash&color=4EAA25&logo=GNU%20Bash&logoColor=4EAA25&labelColor=2F333A" alt="terminal"></a>
-<!-- c -->	
+<!-- c -->
 <a href="https://www.cprogramming.com/" target="_blank"><img src="https://img.shields.io/static/v1?label=&message=C%20Language&color=5C6BC0&logo=c&logoColor=A8B9CC&labelColor=2F333A" alt="C Low level programming language"></a> Language: C
 Compiler: gcc 9.3.0
 <!-- vim -->
@@ -82,7 +82,7 @@ Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
  * This shell should not have any memory leaks
  * Unless specified otherwise, your program must have the exact same output as `sh` (`/bin/sh`) as well as the exact same error output.
 
-### Allowed functions used 
+### Allowed functions used
 
 * `execve` (man 2 execve)
 * `exit` (man 3 exit)
@@ -132,8 +132,7 @@ total 56
 drwxr-xr-x 2 root root   37 Dec  6 08:34 img
 -rw-r--r-- 1 root root 1461 Dec  6 08:34 man_1_simple_shell
 -rw-r--r-- 1 root root 7134 Dec  6 08:34 README.md
--rw-r--r-- 1 root root  824 Dec  6 08:39 shell.h
-```
+
 ### Files
 
 |File|Description|
@@ -151,7 +150,7 @@ drwxr-xr-x 2 root root   37 Dec  6 08:34 img
 
 ## Flowchart
 
-![image]()
+![image](Untitled-Diagram.png)
 
 ## Authors
 
