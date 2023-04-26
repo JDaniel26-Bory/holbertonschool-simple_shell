@@ -1,4 +1,4 @@
-![image](https://co.pinterest.com/pin/207728601555235150/)
+![image](https://www.worldatlas.com/r/w960-q80/upload/35/76/7b/shutterstock-260365799.jpg)
 <h1>Simple Shell</h1>
 Release date April 25, 2023
 
