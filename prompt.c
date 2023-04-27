@@ -6,7 +6,7 @@
  **/
 void prompt(void)
 {
-	for (;;)
+	while (1)
 	{
 		char *text = NULL, **environ;
 		pid_t child_pid;
