@@ -79,12 +79,12 @@ Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 ### Allowed functions used
 
-* `execve` (man 2 execve)
-* `exit` (man 3 exit)
-* `_exit` (man 2 _exit)
-* `fork` (man 2 fork)
-* `free` (man 3 free)
-* `getline` (man 3 getline)
+* `execve` (man 2 execve
+* `exit` (man 3 exit
+* `_exit` (man 2 _exit
+* `fork` (man 2 fork
+* `free` (man 3 free
+* `getline` (man 3 getline
 * `isatty` (man 3 isatty)
 * `malloc` (man 3 malloc)
 * `perror`(man 3 perror)
@@ -98,7 +98,7 @@ Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 ### Installation
 
-- Clone this repository: `git clone "https://github.com/Ouyei/simple_shell"`
+- Clone this repository: `git clone "https://github.com/Bluebee45/simple_shell"`
 - Change directories into the repository: `cd simple_shell`
 - Compile: `gcc -Wall -Werror -Wextra -pedantic *.c -o hsh`
 - Run the shell in interactive mode: `./hsh`
