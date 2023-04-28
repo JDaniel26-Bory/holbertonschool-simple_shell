@@ -81,7 +81,7 @@ Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 * `execve` (man 2 execve)
 * `exit` (man 3 exit)
-* `_exit` (man 2 _exit
+* `_exit` (man 2 _exit)
 * `fork` (man 2 fork
 * `free` (man 3 free
 * `getline` (man 3 getline
