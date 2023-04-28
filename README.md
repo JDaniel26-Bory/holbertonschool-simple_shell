@@ -84,7 +84,7 @@ Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 * `_exit` (man 2 _exit)
 * `fork` (man 2 fork)
 * `free` (man 3 free)
-* `getline` (man 3 getline
+* `getline` (man 3 getline)
 * `isatty` (man 3 isatty)
 * `malloc` (man 3 malloc)
 * `perror`(man 3 perror)
