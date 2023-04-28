@@ -83,7 +83,7 @@ Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 * `exit` (man 3 exit)
 * `_exit` (man 2 _exit)
 * `fork` (man 2 fork)
-* `free` (man 3 free
+* `free` (man 3 free)
 * `getline` (man 3 getline
 * `isatty` (man 3 isatty)
 * `malloc` (man 3 malloc)
