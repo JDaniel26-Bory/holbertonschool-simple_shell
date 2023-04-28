@@ -79,7 +79,7 @@ Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 ### Allowed functions used
 
-* `execve` (man 2 execve
+* `execve` (man 2 execve)
 * `exit` (man 3 exit
 * `_exit` (man 2 _exit
 * `fork` (man 2 fork
